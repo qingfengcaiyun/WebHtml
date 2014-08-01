@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>管理员列表</title>
+<link href="../../libs/easyui/themes/default/easyui.css" rel="stylesheet" type="text/css" />
+<link href="../../libs/easyui/themes/icon.css" rel="stylesheet" type="text/css" />
+<link href="../../libs/global.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+td {
+	height:30px;
+}
+</style>
+<script type="text/javascript" src="../../libs/jquery.js"></script>
+<script type="text/javascript" src="../../libs/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="../../libs/easyui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+
+        });
+		
+		function getOne(){
+		}
+		
+		function save(){
+		}
+		
+		function del(){
+		}
+		
+		function setLock(){
+		}
+		
+		function setUnlock(){
+		}
+</script>
+</head>
+<body>
+<table title="管理员列表" class="easyui-treegrid" data-options="url: 'treegrid_data1.json',method: 'get',rownumbers: false,idField: 'id',treeField: 'name'">
+    <thead>
+        <tr>
+            <th data-options="field:'trueName'" width="300">管理员</th>
+            <th data-options="field:'userName'" width="150">用户名</th>
+            <th data-options="field:'isLocked'" width="150">锁定</th>
+            <th data-options="field:'isDeleted'" width="150">删除</th>
+            <th data-options="field:'operation'" width="150">操作</th>
+        </tr>
+    </thead>
+</table>
+<div id="privateInfo" class="easyui-window" data-options="shadow:true,modal:true,minimizable:false,maximizable:false,closable:true,closed:true,collapsible:false,resizable:false,iconCls:'icon-blank'" title="管理员信息设置" style="width: 400px; height: 360px;">
+    <table width="350" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <th width="100">&nbsp;</th>
+            <th width="">&nbsp;</th>
+        </tr>
+        <tr>
+            <td class="algR">账号：</td>
+            <td class="algL"><input type="text" id="trueName" class="txtInput w200" value="" /></td>
+        </tr>
+        <tr>
+            <td class="algR">姓名：</td>
+            <td class="algL"><input type="text" id="trueName" class="txtInput w200" value="" /></td>
+        </tr>
+        <tr>
+            <td class="algR">所属：</td>
+            <td class="algL"><input type="text" id="trueName" class="txtInput w200" value="" /></td>
+        </tr>
+        <tr>
+            <td class="algR">联系电话：</td>
+            <td class="algL"><input type="text" id="phone" class="txtInput w200" value="" /></td>
+        </tr>
+        <tr>
+            <td class="algR">邮箱：</td>
+            <td class="algL"><input type="text" id="email" class="txtInput w200" value="" /></td>
+        </tr>
+        <tr>
+            <td class="algR">QQ/微信：</td>
+            <td class="algL"><input type="text" id="qq" class="txtInput w200" value="" /></td>
+        </tr>
+        <tr>
+            <td class="algR">账号创建：</td>
+            <td class="algL"><span id="insertTime"></span></td>
+        </tr>
+        <tr>
+            <td class="algR">上次修改：</td>
+            <td class="algL"><span id="updateTime"></span></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td class="algL"><a class="easyui-linkbutton" data-options="iconCls:'icon-save'" href="javascript:void(0)" onclick="saveprivate()">&nbsp;保存&nbsp;</a>&nbsp;&nbsp;<a class="easyui-linkbutton" data-options="iconCls:'icon-no'" href="javascript:void(0)" onclick="saveprivate()">&nbsp;锁定&nbsp;</a>&nbsp;&nbsp;<a class="easyui-linkbutton" data-options="iconCls:'icon-remove'" href="javascript:void(0)" onclick="saveprivate()">&nbsp;删除&nbsp;</a></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

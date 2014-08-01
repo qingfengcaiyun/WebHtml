@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript" src="../libs/jquery.js"></script>
+<script type="text/javascript">
+	alert(isUploadFile("ex.txt"));
+	
+	function isUploadFile(filePath) {
+            var b = false;
+            var extName = filePath.substr(filePath.lastIndexOf(".") + 1);
+            alert(extName);
+            var extFiles = "gif,jpg,jpeg,png,bmp,swf,flv,mp3,wav,wma,wmv,mid,avi,mpg,asf,rm,rmvb,doc,docx,xls,xlsx,ppt,htm,html,txt,zip,rar,gz,bz2".split(',');
+            for (var i = 0, j = extFiles.length; i < j; i++) {
+                alert(extFiles[i]);
+                if (extFiles[i].toString() == extName.toString()) {
+                    b = true;
+                }
+            }
+
+            return b;
+        }
+</script>
+</head>
+
+<body>
+</body>
+</html>
