@@ -5,7 +5,7 @@
 <title>无标题文档</title>
 <script type="text/javascript" src="../libs/jquery.js"></script>
 <script type="text/javascript">
-	alert(isUploadFile("ex.txt"));
+	//alert(isUploadFile("ex.txt"));
 	
 	function isUploadFile(filePath) {
             var b = false;
@@ -21,6 +21,11 @@
 
             return b;
         }
+		
+		$(document).ready(function(){
+			var d = [{a:1},{a:1},{a:1}];
+			alert(d.length);
+		});
 </script>
 </head>
 

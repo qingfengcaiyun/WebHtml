@@ -86,7 +86,8 @@ a:active {
 	text-align:center;
 	font-size:14px;
 	font-weight:bold;
-	color:#800000
+	color:#800000;
+	margin-top: 10px;
 }
 #indexPage a {
 	color:#800000;
