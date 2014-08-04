@@ -2,9 +2,253 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
+<title>欢迎访问装修人人通</title>
+<link rel="stylesheet" type="text/css" href="../../css/gstyles.css" />
+<link rel="stylesheet" type="text/css" href="../../css/global.css" />
+<style type="text/css">
+#Logo {
+	float: left;
+	height: 100px;
+	width: 400px;
+}
+#Detail {
+	float: left;
+	height: 100px;
+	width: 800px;
+}
+#TopBar {
+	float: left;
+	height: 30px;
+	width: 800px;
+	line-height: 30px;
+	text-align: right;
+	font-weight: bolder;
+}
+#Search {
+	float: left;
+	height: 70px;
+	width: 800px;
+	line-height: 70px;
+}
+#sdiv {
+	float: left;
+	height: 30px;
+	width: 400px;
+	border: 5px solid #800000;
+	margin-top: 10px;
+	margin-left: 30px;
+	font-size: 14px;
+	_display: inline;
+}
+#catediv {
+	margin-top: 8px;
+	margin-left: 20px;
+	_display: inline;
+	overflow: hidden;
+	width: 80px;
+	float: left;
+}
+#cate {
+	float: left;
+	margin: -2px;
+}
+#msg {
+	float: left;
+	border: 0;
+	margin-top: 8px;
+	margin-left: 5px;
+	width: 200px;
+}
+#msgSearch {
+	float: right;
+	border: 0;
+	background-color: #800000;
+	height: 30px;
+	width: 60px;
+	color: #FFF;
+	font-weight: bold;
+}
+#NavBar {
+	float: left;
+	height: 40px;
+	width: 1200px;
+	line-height: 40px;
+	background-color: #800000;
+	margin-top: 10px;
+}
+#NavBar .NavItem {
+	float: left;
+	height: 40px;
+	width: 120px;
+	font-size: 18px;
+	line-height: 40px;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+}
+.PageItem {
+	float: left;
+	width: 1200px;
+	margin-bottom: 20px;
+}
+#ArticleDiv {
+	float: left;
+	height: 1000px;
+	width: 933px;
+	border: 1px solid #CCC;
+	margin-top: 10px;
+	margin-left: 5px;
+	_display: inline;
+}
+#ArticleDiv .ArticleTitle {
+	font-size: 14px;
+	line-height: 40px;
+	font-weight: bolder;
+	float: left;
+	height: 40px;
+	width: 900px;
+	margin-left: 15px;
+	_display: inline;
+}
+#ArticleDiv .ArticleDetail {
+	line-height: 24px;
+	float: left;
+	height: 24px;
+	width: 900px;
+	margin-left: 15px;
+	_display: inline;
+	color: #999;
+}
+#ArticleDiv .ArticleContent {
+	float: left;
+	width: 900px;
+	margin-top: 20px;
+	margin-left: 15px;
+	line-height: 24px;
+	_display: inline;
+}
+#CategoryList {
+	float: left;
+	width: 245px;
+	margin-top: 10px;
+	margin-left: 10px;
+	_display: inline;
+}
+#CategoryList .CateOn {
+	float: left;
+	height: 38px;
+	width: 243px;
+	margin-top: 5px;
+	line-height: 38px;
+	font-size: 14px;
+	font-weight: bolder;
+	color: #FFF;
+	background-color: #800000;
+	text-align: center;
+	border: 1px solid #800000;
+	cursor: pointer;
+}
+#CategoryList .CateOff {
+	float: left;
+	height: 38px;
+	width: 243px;
+	margin-top: 5px;
+	line-height: 38px;
+	font-size: 14px;
+	font-weight: bolder;
+	color: #FFF;
+	text-align: center;
+	border: 1px solid #999;
+	cursor: pointer;
+	background-color: #CCC;
+}
+#CategoryList .CateOn a {
+	color: #FFF;
+	text-decoration: none;
+}
+#CategoryList .CateOff a {
+	color: #000;
+	text-decoration: none;
+}
+#CategoryList .HotList {
+	float: left;
+	width: 243px;
+	margin-top: 20px;
+	border: 1px solid #CCC;
+	
+}
+#CategoryList .HotList .HotLabel {
+	float: left;
+	width: 230px;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 10px;
+	_display: inline;
+	font-size: 14px;
+}
+#CategoryList .HotList .HotItem {
+	float: left;
+	width: 230px;
+	height: 24px;
+	line-height: 24px;
+	margin-left: 10px;
+	_display: inline;
+}
+</style>
 </head>
-
 <body>
+<div id="Container">
+    <div id="HeadDiv">
+        <div id="Logo"><a href="/"><img src="../../img/logo.jpg" width="400" height="100" border="0" alt="进入首页" title="装修人人通" /></a></div>
+        <div id="Detail">
+            <div id="TopBar"><a href="/">首页</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">注册</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">全国热线：400-886-1234</a>&nbsp;&nbsp;|&nbsp;&nbsp;</div>
+            <div id="Search">
+                <div id="sdiv">
+                    <div id="catediv">
+                        <select name="cate" id="cate">
+                            <option>楼盘案例</option>
+                        </select>
+                    </div>
+                    <input name="msg" id="msg" type="text" value="" />
+                    <input name="msgSearch" id="msgSearch" type="button" value=" 搜索" />
+                </div>
+            </div>
+        </div>
+        <div id="NavBar">
+            <div class="NavItem">首&nbsp;&nbsp;页</div>
+            <div class="NavItem">发布招标</div>
+            <div class="NavItem">找装修公司</div>
+            <div class="NavItem">装修案例</div>
+            <div class="NavItem">效果图</div>
+        </div>
+    </div>
+    <div id="PageDiv">
+    	<div class="PageItem">&nbsp;&nbsp;<a href="#">装修人人通</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="#">装修流程</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;收房小常识</div>
+        <div class="PageItem">
+            <div id="ArticleDiv">
+                <div class="ArticleTitle">此处显示  class "ArticleTitle" 的内容</div>
+                <div class="ArticleDetail">此处显示  class "ArticleTitle" 的内容</div>
+                <div class="ArticleContent">
+                    <p>此处显示  class "ArticleTitle" 的内容此处显示  class &quot;ArticleTitle&quot; 的内容此处显示  class "ArticleTitle" 的内容此处显示  class &quot;ArticleTitle&quot; 的内容此处显示  class "ArticleTitle" 的内容此处显示  class &quot;ArticleTitle&quot; 的内容此处显示  class "ArticleTitle" 的内容此处显示  class &quot;ArticleTitle&quot; 的内容</p>
+                </div>
+            </div>
+            <div id="CategoryList">
+            	<div class="CateOn"><a href="../index_1.html">【&nbsp;全部资讯&nbsp;】</a></div>
+                <div class="CateOff"><a href="list_id_1.html">【&nbsp;全部资讯&nbsp;】</a></div>
+				<div class="HotList">
+					<div class="HotLabel">最新文章</div>
+					<div class="HotItem"><a href="" target="_blank">最新文章</a></div>
+				</div>
+            </div>
+        </div>
+    </div>
+    <div id="FootDiv">
+        <div id="FootBar"><a href="#">联系我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">版权声明</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">关于我们</a></div>
+        <div id="FootDetail"> Copyright&nbsp;@&nbsp;2008~2013&nbsp;Corporation,All&nbsp;Rights&nbsp;Reserved<br />
+            ICP经营许可证：浙B2-20120133&nbsp;经营信网站-备案证书<br />
+        </div>
+    </div>
+</div>
 </body>
 </html>
